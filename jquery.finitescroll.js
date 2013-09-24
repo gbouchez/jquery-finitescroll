@@ -1,7 +1,7 @@
 (function ($) {
     $.fn.finitescroll = function (options) {
         var settings = $.extend({
-            url: "?p=__PAGE__"
+            url: function(page){return "?p="+page;}
         }, options);
         return this.each(function () {
             this.hasEnded = false;
@@ -14,10 +14,11 @@
                     && object.loading == false
                     && object.offset - $(window).height() <= $(window).scrollTop()
                     && $(object).is(":visible")) {
+
                     object.loading = true;
 
                     $.ajax({
-                        url: settings.url.replace("__PAGE__", object.page),
+                        url: settings.url(object.page),
                         type: 'GET',
 
                         success: function (data) {
