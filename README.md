@@ -11,11 +11,13 @@ How to use
 As this is a jQuery plugin, it depends on jQuery to run, so include it.
 
 You can then use it by calling:
+
     $("your-selector").finitescroll({
         url: function(page) {
             return "?page="+page;
         }
     });
+
 ...where the url option is a callback that takes the current page and returns the url associated with the corresponding resource.
 
 Credits
