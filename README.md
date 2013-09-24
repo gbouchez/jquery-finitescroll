@@ -21,4 +21,4 @@ You can then use it by calling:
 Credits
 -------
 
-This plugin's basic code has been derived from the code of Arnaud Bosquet(http://www.arnaudbosquet.fr/developpement/comment-faire-un-infinite-scroll-en-jquery).
+This plugin's basic code has been derived from the code of [Arnaud Bosquet](http://www.arnaudbosquet.fr/developpement/comment-faire-un-infinite-scroll-en-jquery).
