@@ -19,6 +19,7 @@ You can then use it by calling:
     });
 
 ...where the url option is a callback that takes the current page and returns the url associated with the corresponding resource.
+The plugin will append the content of the response at the end of the specified selector whenever you scroll to the bottom of it.
 
 Credits
 -------
